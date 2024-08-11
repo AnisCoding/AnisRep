@@ -1,0 +1,25 @@
+/* Footer.css */
+
+.Footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #2196F3; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .Footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .Footer p {
+    margin: 5px 0;
+  }
+  
+
+  
+  .Footer a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+  }

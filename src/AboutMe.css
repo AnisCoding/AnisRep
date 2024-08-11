@@ -1,0 +1,29 @@
+/* AboutMe.css */
+
+/* Section Styling */
+.AboutMe-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .AboutMe-title {
+    font-size: 2.5rem; /* Make the title larger */
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Highlight Styling */
+  .AboutMe-title .highlight {
+    color: #3498db; /* Match the color with the toggle color or your preference */
+    font-size: 2.5rem; /* Ensure "Me" is the same size as the title */
+  }
+  
+  /* Description Styling */
+  .AboutMe-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

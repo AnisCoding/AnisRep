@@ -1,0 +1,120 @@
+/* Experience.css */
+.Experience-section {
+    padding: 50px 20px;
+    background-color: var(--background-color);
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .Experience-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .highlight {
+    color: #007BFF; /* Blue color matching the toggle */
+  }
+  
+  .Experience-entry {
+    margin-bottom: 40px;
+    background: var(--entry-background-color);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--entry-border-color); /* Use the variable for border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.5s ease;
+  }
+  
+  .Experience-entry:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Experience-role {
+    font-size: 1.8em;
+  }
+  
+  .Experience-duration {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .Experience-details {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .Experience-details li {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  /* Add specific styles for dark and light modes */
+  body.dark-mode .Experience-entry {
+    --entry-border-color: white; /* White border for dark mode */
+    --entry-background-color: #222; /* Darker background for the entries */
+  }
+  
+  body.light-mode .Experience-entry {
+    --entry-border-color: black; /* Black border for light mode */
+    --entry-background-color: #fff; /* Lighter background for the entries */
+  }
+  .certificate-thumbnail {
+  width: 150px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.certificate-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.certificate-modal-content img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.certificate-thumbnail {
+    width: 90px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .certificate-thumbnail.cis-certificate {
+    transform: rotate(-90deg); /* Rotate CIS certificate vertically */
+  }
+  
+  .certificate-thumbnail.unicef-certificate {
+    transform: rotate(-90deg); /* Rotate UNICEF certificate horizontally */
+  }
+  
+  .certificate-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .certificate-modal-content img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  

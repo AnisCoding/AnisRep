@@ -1,0 +1,21 @@
+.ScrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 10px;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .ScrollToTop-icon {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .ScrollToTop:hover {
+    background-color: #0056b3;
+  }
+  

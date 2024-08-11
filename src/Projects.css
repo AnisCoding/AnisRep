@@ -1,0 +1,65 @@
+/* Projects.css */
+
+/* General Section Styling */
+.Projects-section {
+    padding: 20px;
+  }
+  
+  /* Title Styling */
+  .Projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Gallery Container Styling */
+  .Projects-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Image Wrapper Styling */
+  .Projects-image-wrapper {
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Image Styling */
+  .Projects-image {
+    width: 150px; /* Adjust size to be uniform */
+    height: 100px; /* Adjust size to be uniform */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .Projects-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Modal Styling */
+  .Projects-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Image Styling */
+  .Projects-modal-image {
+    width: 70%; /* Adjust width as needed */
+    height: auto;
+    max-width: 800px; /* Ensure a maximum width */
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  

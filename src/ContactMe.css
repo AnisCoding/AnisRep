@@ -1,0 +1,81 @@
+:root {
+    --input-border-light: black;
+    --input-border-dark: white;
+    --input-border-width: 2px; /* Default border width */
+  }
+  
+  .ContactMe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .ContactMe-form input,
+  .ContactMe-form textarea {
+    padding: 10px;
+    border: var(--input-border-width) solid transparent; /* Adjust border width */
+    border-radius: 4px;
+    background-color: transparent;
+    color: inherit; /* Ensure text color is appropriate */
+    font-size: 16px;
+  }
+  
+  .ContactMe-form textarea {
+    min-height: 100px; /* Adjust as needed */
+  }
+  
+  .ContactMe-form input::placeholder,
+  .ContactMe-form textarea::placeholder {
+    color: inherit; /* Ensure placeholder text color is appropriate */
+  }
+  
+  .ContactMe-form input:focus,
+  .ContactMe-form textarea:focus {
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Apply border color based on mode */
+  .dark-mode .ContactMe-form input,
+  .dark-mode .ContactMe-form textarea {
+    border-color: var(--input-border-dark);
+  }
+  
+  .light-mode .ContactMe-form input,
+  .light-mode .ContactMe-form textarea {
+    border-color: var(--input-border-light);
+  }
+  
+  .ContactMe-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ContactMe-button:hover {
+    background-color: #0056b3;
+  }
+  /* ContactMe.css */
+
+/* Section Styling */
+.ContactMe-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .ContactMe-title {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Highlight Styling */
+  .ContactMe-title .highlight {
+    color: #3498db; /* Color for 'Me' or other highlighted text */
+  }
+  

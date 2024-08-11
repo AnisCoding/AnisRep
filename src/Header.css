@@ -1,0 +1,300 @@
+/* General Header Styling */
+.Header {
+    position: relative;
+    padding: 20px;
+    background-color: #000000; /* Black background for dark mode */
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  .Header.light {
+    background-color: #ffffff; /* White background for light mode */
+    color: black;
+  }
+  
+  /* Header Title Styling */
+  .Header-title {
+    font-size: 2.5em;
+    margin-right: 10px; /* Move text slightly to the left */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better readability */
+  }
+  
+  .Header-title-highlight {
+    color: #2196F3; /* Blue color */
+    font-weight: 600; /* Slightly bolder text */
+  }
+  
+  /* Header Content Styling */
+  .Header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px); /* Adjust for header height */
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .Header-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .Header-animation {
+    width: 500px; /* Adjust the size as needed */
+    height: 500px; /* Adjust the size as needed */
+    margin-left: -20px; /* Move GIF slightly to the left */
+  }
+  
+  /* Header Top Styling */
+  .Header-top {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #ffffff; /* White background for light mode */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    z-index: 1000;
+  }
+  
+  .Header.light .Header-top {
+    background: #ffffff; /* White background for light mode */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Black shadow for light mode */
+  }
+  
+  .Header.dark .Header-top {
+    background: #000000; /* Black background for dark mode */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* White shadow for dark mode */
+  }
+  
+  /* Navigation Styling */
+  .Header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Ensures the nav takes available space */
+  }
+  
+  .Header-nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+  }
+  
+  .Header-nav-item {
+    margin: 0 15px;
+  }
+  
+  .Header-nav-item a {
+    color: currentColor; /* Color based on mode */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600; /* Slightly bolder text */
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  .Header.light .Header-nav-item a {
+    color: black; /* Black color for light mode */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for light mode */
+  }
+  
+  .Header.dark .Header-nav-item a {
+    color: white; /* White color for dark mode */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for dark mode */
+  }
+  
+  .Header-nav-list .Header-nav-item a:hover {
+    color: #2196F3; /* Blue color on hover */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Toggle Styling */
+  .Header-toggle {
+    margin-left: auto; /* Ensures the toggle is on the far right */
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3; /* Blue background for the toggle when checked */
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .Header-category {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust height as needed */
+    font-size: 2em;
+    text-align: center;
+    margin-left: 10px; /* Push text to the right */
+  }
+  
+  .Header-category span {
+    color: #2196F3; /* Blue color */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Header-nav {
+      display: none; /* Hide navigation menu */
+    }
+  
+    .hamburger-menu {
+      display: block; /* Show hamburger menu */
+    }
+  
+    .Header-content {
+      flex-direction: column; /* Stack elements vertically */
+      height: auto; /* Adjust height based on content */
+      padding: 100px; /* Add padding for better spacing */
+    }
+  
+    .Header-title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .Header-title {
+      margin-right: 0; /* Reset margin for smaller screens */
+      font-size: 2.5em; /* Smaller text for smaller screens */
+      margin-bottom: 20px; /* Increase space between text and GIF */
+    }
+  
+    .Header-animation {
+      width: 400px; /* Smaller GIF for smaller screens */
+      height: 400px; /* Smaller GIF for smaller screens */
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+  
+    .Header-category {
+      display: flex; /* Show the category text on smaller screens */
+      margin-top: 10px; /* Space above the category */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .hamburger-menu {
+      display: none; /* Hide hamburger menu on larger screens */
+    }
+  }
+  
+  /* Hamburger Menu Styling */
+  .hamburger-menu {
+    cursor: pointer;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: currentColor;
+    font-size: 1.5em;
+    transition: color 0.3s;
+  }
+  
+  .hamburger-menu:hover {
+    color: #2196F3; /* Blue color on hover */
+  }
+  
+  .hamburger-list {
+    position: fixed; /* Fixed position to stay in place */
+    top: 80px; /* Adjust to be underneath the hamburger icon */
+    left: 0;
+    width: 30%;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+  }
+  
+  .hamburger-list.show {
+    display: flex;
+  }
+  
+  .hamburger-nav-item {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .hamburger-nav-item:hover {
+    background-color: #444;
+    color: #2196F3; /* Blue color on hover */
+  }
+  /* Social Icons Styling */
+  .Header-social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .Header-social-icons a {
+    color: inherit; /* Use current text color */
+    font-size: 2em;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .Header-social-icons a:hover {
+    color: #2196F3; /* Blue color on hover */
+  }
+  
