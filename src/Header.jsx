@@ -89,7 +89,7 @@ function Header({ isDarkMode, onToggleMode }) {
           </h1>
           <img src={animationGif} alt="Animation" className="Header-animation" />
           <div className="Header-social-icons">
-            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEUQpxjgtG9vwAAAZEosDAoBslc_Wxcqoawzvl80EMvO80OlLFvD-31pxRQbn5yQ9UonnY6ueWxZSohck_zkxpwtDS_GpytLbWkCdQ8VTHp-ejZpvy-Kd0mAQ2gU7Aoohll-aM=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fanis-halabi" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/anis_halabi/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
             <a href="https://github.com/AnisCoding" target="_blank" rel="noopener noreferrer">
